@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mentoria financeira com Cristiane Cirrilo: saia das dívidas, organize sua vida financeira e comece a investir com segurança.">
+  <title>Cristiane Cirrilo | Proposta Finance Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { ink:'#071e24', deep:'#0b2c33', sea:'#0f766e', mint:'#2dd4a7', gold:'#e9b44c', cream:'#f6f3eb' },
+      fontFamily: { sans:['DM Sans','sans-serif'], display:['Manrope','sans-serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="versao-3.css">
+</head>
+<body class="theme-neon bg-cream text-ink antialiased selection:bg-mint selection:text-ink">
+  <div class="noise" aria-hidden="true"></div>
+  <header id="header" class="fixed inset-x-0 top-0 z-50 transition-all">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-8" aria-label="Navegação principal">
+      <a href="#inicio" class="group flex items-center gap-3" aria-label="Cristiane Cirrilo - início">
+        <span class="grid h-10 w-10 place-items-center rounded-full border border-white/20 bg-white/10 text-gold font-display font-extrabold">CC</span>
+        <span class="leading-tight text-white"><strong class="block font-display text-sm tracking-wide">CRISTIANE CIRRILO</strong><small class="text-[10px] uppercase tracking-[.24em] text-white/55">Finanças com propósito</small></span>
+      </a>
+      <div class="hidden items-center gap-8 text-sm font-medium text-white/70 md:flex">
+        <a class="nav-link" href="#metodo">O método</a><a class="nav-link" href="#jornada">Sua jornada</a><a class="nav-link" href="#sobre">Sobre</a><a class="nav-link" href="#faq">Dúvidas</a>
+      </div>
+      <button data-open-modal class="hidden rounded-full bg-gold px-5 py-3 text-sm font-bold text-ink transition hover:-translate-y-0.5 hover:bg-[#f3c667] md:block">Quero organizar minhas finanças</button>
+      <button id="menuButton" class="text-white md:hidden" aria-label="Abrir menu"><i data-lucide="menu"></i></button>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t border-white/10 bg-ink/95 px-5 py-5 text-white md:hidden">
+      <div class="flex flex-col gap-4"><a href="#metodo">O método</a><a href="#jornada">Sua jornada</a><a href="#sobre">Sobre</a><a href="#faq">Dúvidas</a><button data-open-modal class="mt-2 rounded-full bg-gold px-5 py-3 font-bold text-ink">Agendar conversa</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero relative min-h-[830px] overflow-hidden bg-ink text-white">
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="mx-auto grid min-h-[830px] max-w-7xl items-center gap-16 px-5 pb-24 pt-36 lg:grid-cols-[1.08fr_.92fr] lg:px-8">
+        <div class="relative z-10 reveal">
+          <div class="eyebrow"><span class="h-2 w-2 rounded-full bg-mint shadow-[0_0_16px_#2dd4a7]"></span> Mentoria financeira individual</div>
+          <h1 class="mt-7 max-w-3xl font-display text-5xl font-extrabold leading-[1.03] tracking-[-.045em] sm:text-6xl lg:text-[72px]">Sua vida não precisa girar em torno das <span class="text-gradient">dívidas.</span></h1>
+          <p class="mt-7 max-w-xl text-lg leading-8 text-white/68">Um caminho humano e possível para você recuperar o controle, construir tranquilidade e começar a investir — mesmo que hoje pareça distante.</p>
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <button data-open-modal class="cta-primary group">Quero dar o primeiro passo <i data-lucide="arrow-up-right" class="h-5 w-5 transition group-hover:rotate-45"></i></button>
+            <a href="#metodo" class="cta-ghost"><i data-lucide="play" class="h-4 w-4 fill-current"></i> Entenda como funciona</a>
+          </div>
+          <div class="mt-12 flex flex-wrap gap-x-8 gap-y-4 text-sm text-white/55">
+            <span class="flex items-center gap-2"><i data-lucide="shield-check" class="h-4 w-4 text-mint"></i> Sem julgamentos</span>
+            <span class="flex items-center gap-2"><i data-lucide="lock-keyhole" class="h-4 w-4 text-mint"></i> Conversa confidencial</span>
+            <span class="flex items-center gap-2"><i data-lucide="route" class="h-4 w-4 text-mint"></i> Plano personalizado</span>
+          </div>
+        </div>
+
+        <div class="relative z-10 mx-auto w-full max-w-[510px] reveal delay-1" aria-label="Painel ilustrativo de evolução financeira">
+          <div class="dashboard-card">
+            <div class="mb-8 flex items-start justify-between"><div><p class="text-xs uppercase tracking-[.22em] text-white/40">Seu novo cenário</p><p class="mt-2 font-display text-2xl font-bold">Liberdade em construção</p></div><span class="status"><span></span> No caminho</span></div>
+            <div class="relative h-56 overflow-hidden rounded-2xl bg-white/[.035] p-5">
+              <div class="chart-grid"></div>
+              <svg viewBox="0 0 460 190" class="absolute inset-x-0 bottom-0 w-full" role="img" aria-label="Gráfico crescente da organização ao investimento">
+                <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2dd4a7" stop-opacity=".38"/><stop offset="1" stop-color="#2dd4a7" stop-opacity="0"/></linearGradient></defs>
+                <path d="M0 172 C60 166 72 143 117 147 S188 118 229 126 S286 83 331 91 S398 42 460 27 L460 190 L0 190Z" fill="url(#area)"/>
+                <path d="M0 172 C60 166 72 143 117 147 S188 118 229 126 S286 83 331 91 S398 42 460 27" fill="none" stroke="#2dd4a7" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="331" cy="91" r="6" fill="#071e24" stroke="#e9b44c" stroke-width="4"/><circle cx="460" cy="27" r="7" fill="#2dd4a7"/>
+              </svg>
+              <span class="chart-tag left-[48%] top-[34%]">Reserva</span><span class="chart-tag right-3 top-4">Investimentos</span>
+            </div>
+            <div class="mt-5 grid grid-cols-3 gap-3">
+              <div class="metric"><i data-lucide="scissors"></i><small>1º passo</small><strong>Desendividar</strong></div>
+              <div class="metric"><i data-lucide="wallet-cards"></i><small>2º passo</small><strong>Organizar</strong></div>
+              <div class="metric active"><i data-lucide="trending-up"></i><small>3º passo</small><strong>Investir</strong></div>
+            </div>
+          </div>
+          <div class="float-card -left-5 top-28"><span class="icon-dot"><i data-lucide="check" class="h-4 w-4"></i></span><span><small>Plano do mês</small><strong>100% sob controle</strong></span></div>
+          <div class="float-card -right-3 bottom-24"><span class="icon-dot gold"><i data-lucide="sparkles" class="h-4 w-4"></i></span><span><small>Próxima conquista</small><strong>Sua reserva</strong></span></div>
+        </div>
+      </div>
+      <div class="absolute bottom-0 inset-x-0 border-t border-white/10 bg-white/[.025] backdrop-blur-sm">
+        <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-12 gap-y-4 px-5 py-5 text-xs uppercase tracking-[.18em] text-white/40 lg:justify-between lg:px-8"><span>Clareza para decidir</span><i data-lucide="diamond" class="h-3 w-3 text-gold"></i><span>Coragem para mudar</span><i data-lucide="diamond" class="h-3 w-3 text-gold"></i><span>Estratégia para prosperar</span><i data-lucide="diamond" class="h-3 w-3 text-gold"></i><span>Leveza para viver</span></div>
+      </div>
+    </section>
+
+    <section class="py-24 lg:py-32">
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.82fr_1.18fr] lg:px-8">
+        <div class="reveal"><p class="section-kicker">Talvez você se reconheça aqui</p><h2 class="section-title mt-5">O problema não é só o dinheiro. É o peso que ele trouxe.</h2><p class="mt-6 leading-7 text-ink/60">Você não precisa entender tudo de finanças agora. Precisa apenas de um ponto de partida seguro.</p></div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <article class="pain-card reveal"><span>01</span><i data-lucide="calendar-clock"></i><h3>O salário acaba antes do mês</h3><p>As contas chegam e a sensação é de estar sempre correndo atrás.</p></article>
+          <article class="pain-card reveal delay-1"><span>02</span><i data-lucide="messages-square"></i><h3>Dinheiro virou assunto difícil</h3><p>Ansiedade, culpa e conflitos tomaram o lugar de decisões tranquilas.</p></article>
+          <article class="pain-card reveal"><span>03</span><i data-lucide="layers-3"></i><h3>As dívidas parecem uma bola de neve</h3><p>Você paga uma conta, mas outras três continuam crescendo.</p></article>
+          <article class="pain-card reveal delay-1"><span>04</span><i data-lucide="telescope"></i><h3>Investir parece não ser para você</h3><p>Existe vontade de construir o futuro, mas falta clareza sobre como começar.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="metodo" class="relative overflow-hidden bg-deep py-24 text-white lg:py-32">
+      <div class="method-glow"></div>
+      <div class="relative mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center reveal"><p class="section-kicker light">Método ROTA</p><h2 class="section-title mt-5 text-white">Uma rota simples para transformar sua relação com o dinheiro.</h2><p class="mx-auto mt-6 max-w-2xl text-white/60">Sem fórmulas mágicas. Construímos decisões sustentáveis, respeitando sua realidade e seu ritmo.</p></div>
+        <div class="relative mt-16 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div class="journey-line hidden lg:block"></div>
+          <article class="method-card reveal"><div class="method-icon">R</div><p>Reconhecer</p><h3>Enxergar sua realidade</h3><span>Mapeamos renda, dívidas, hábitos e objetivos sem culpa ou julgamento.</span></article>
+          <article class="method-card reveal delay-1"><div class="method-icon">O</div><p>Organizar</p><h3>Criar um plano possível</h3><span>Definimos prioridades, acordos e um orçamento que funciona na vida real.</span></article>
+          <article class="method-card reveal delay-2"><div class="method-icon">T</div><p>Transformar</p><h3>Trocar hábitos e escolhas</h3><span>Você ganha método para decidir melhor e não repetir o ciclo da dívida.</span></article>
+          <article class="method-card reveal delay-3"><div class="method-icon">A</div><p>Avançar</p><h3>Construir e investir</h3><span>Com a base segura, começamos sua reserva e sua jornada de investimentos.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="jornada" class="py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid items-end gap-8 lg:grid-cols-2"><div class="reveal"><p class="section-kicker">Do aperto à autonomia</p><h2 class="section-title mt-5">Você não recebe só uma planilha. Recebe direção.</h2></div><p class="max-w-xl leading-7 text-ink/60 lg:justify-self-end">Acompanhamento individual para transformar números em atitudes, com ferramentas práticas e apoio durante o processo.</p></div>
+        <div class="mt-14 grid gap-6 lg:grid-cols-[1.2fr_.8fr]">
+          <div class="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-ink/5 sm:p-10 reveal">
+            <div class="mb-8 flex items-center justify-between"><div><p class="text-sm font-semibold text-sea">Simulador de respiro financeiro</p><h3 class="mt-1 font-display text-2xl font-bold">Quanto você pode reorganizar?</h3></div><div class="hidden rounded-full bg-mint/10 p-3 text-sea sm:block"><i data-lucide="sliders-horizontal"></i></div></div>
+            <label class="slider-label"><span>Renda mensal da família</span><strong id="incomeValue">R$ 5.000</strong></label><input id="income" type="range" min="1500" max="20000" value="5000" step="100" class="money-range">
+            <label class="slider-label mt-8"><span>Parcelas e dívidas por mês</span><strong id="debtValue">R$ 1.800</strong></label><input id="debt" type="range" min="0" max="10000" value="1800" step="100" class="money-range">
+            <div class="mt-9 grid gap-3 sm:grid-cols-3"><div class="sim-result"><small>Comprometimento</small><strong id="ratioResult">36%</strong></div><div class="sim-result"><small>Valor disponível</small><strong id="freeResult">R$ 3.200</strong></div><div class="sim-result accent"><small>Primeira meta</small><strong id="goalResult">R$ 500</strong></div></div>
+            <p class="mt-5 text-xs leading-5 text-ink/40">* Simulação educativa. Na mentoria, o plano considera todos os detalhes da sua realidade.</p>
+          </div>
+          <div class="grid gap-5">
+            <article class="benefit-card dark reveal delay-1"><div class="benefit-icon"><i data-lucide="scan-search"></i></div><div><small>Diagnóstico completo</small><h3>Clareza sobre o que entra, sai e precisa mudar.</h3></div></article>
+            <article class="benefit-card reveal delay-2"><div class="benefit-icon"><i data-lucide="handshake"></i></div><div><small>Estratégia de negociação</small><h3>Prioridades para lidar com credores e reduzir dívidas.</h3></div></article>
+            <article class="benefit-card reveal delay-3"><div class="benefit-icon"><i data-lucide="line-chart"></i></div><div><small>Plano de crescimento</small><h3>Reserva de emergência e primeiros investimentos.</h3></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="overflow-hidden bg-[#e8eee8] py-24 lg:py-32">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:px-8">
+        <div class="relative mx-auto w-full max-w-lg reveal">
+          <figure class="portrait-photo">
+            <img src="assets/cristiane-cirrilo.png" alt="Retrato profissional de Cristiane Cirrilo" width="1024" height="1280" loading="lazy">
+            <div class="portrait-shade" aria-hidden="true"></div>
+            <figcaption><span>Mentora financeira</span><strong>Cristiane Cirrilo</strong></figcaption>
+          </figure>
+          <div class="absolute -bottom-5 -right-2 rounded-2xl bg-gold p-5 text-ink shadow-xl sm:right-5"><i data-lucide="heart-handshake" class="mb-3 h-7 w-7"></i><strong class="block font-display text-lg">Acolher primeiro.</strong><span class="text-sm">Orientar com estratégia.</span></div>
+        </div>
+        <div class="reveal delay-1"><p class="section-kicker">Quem caminha com você</p><h2 class="section-title mt-5">Finanças explicadas por alguém que entende de pessoas.</h2><p class="mt-6 text-lg leading-8 text-ink/65">Cristiane Cirrilo acredita que educação financeira não começa nos investimentos. Começa quando a pessoa volta a acreditar que é capaz de organizar a própria vida.</p><p class="mt-5 leading-7 text-ink/60">Sua consultoria une escuta, educação e planejamento para ajudar pessoas e equipes a tomarem decisões mais conscientes, do processo de desendividamento à construção de patrimônio.</p>
+          <div class="mt-8 grid grid-cols-2 gap-4"><div class="about-stat"><strong>01</strong><span>Plano único para cada realidade</span></div><div class="about-stat"><strong>100%</strong><span>Foco em autonomia financeira</span></div></div>
+          <button data-open-modal class="cta-dark mt-9">Conversar com a Cristiane <i data-lucide="arrow-right" class="h-5 w-5"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 lg:py-32">
+      <div class="mx-auto max-w-5xl px-5 text-center lg:px-8 reveal"><p class="section-kicker">Para pessoas e organizações</p><h2 class="section-title mx-auto mt-5 max-w-3xl">Educação financeira melhora a vida — e também o ambiente de trabalho.</h2>
+        <div class="mt-12 grid gap-5 text-left md:grid-cols-3"><article class="audience-card"><i data-lucide="user-round"></i><h3>Mentoria individual</h3><p>Para quem quer sair das dívidas, organizar objetivos e investir.</p></article><article class="audience-card featured"><i data-lucide="users-round"></i><h3>Equipes e empresas</h3><p>Palestras e programas para equipes comerciais e de relacionamento.</p></article><article class="audience-card"><i data-lucide="building-2"></i><h3>Lideranças</h3><p>Conteúdo para coordenadores, administradores e gestores de pessoas.</p></article></div>
+      </div>
+    </section>
+
+    <section id="faq" class="bg-white py-24 lg:py-32">
+      <div class="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[.8fr_1.2fr] lg:px-8"><div class="reveal"><p class="section-kicker">Perguntas frequentes</p><h2 class="section-title mt-5">Dúvidas também fazem parte do começo.</h2><p class="mt-6 text-ink/60">Se a sua pergunta não estiver aqui, fale diretamente com a gente.</p><button data-open-modal class="mt-8 inline-flex items-center gap-2 font-bold text-sea">Enviar uma pergunta <i data-lucide="arrow-up-right" class="h-4 w-4"></i></button></div>
+        <div class="divide-y divide-ink/10" id="accordion">
+          <article class="faq-item open"><button><span>Preciso estar com as contas em dia para começar?</span><i data-lucide="plus"></i></button><div><p>Não. A mentoria foi pensada justamente para quem precisa organizar o cenário atual. O ponto de partida é a sua realidade de hoje.</p></div></article>
+          <article class="faq-item"><button><span>Você vai me indicar investimentos?</span><i data-lucide="plus"></i></button><div><p>O foco inicial é construir uma base financeira saudável. Quando for o momento, você receberá educação e critérios para começar a investir com consciência e segurança.</p></div></article>
+          <article class="faq-item"><button><span>Como funciona o primeiro encontro?</span><i data-lucide="plus"></i></button><div><p>É uma conversa confidencial para entender seu momento, suas principais dificuldades e seus objetivos. Depois disso, definimos a melhor rota de acompanhamento.</p></div></article>
+          <article class="faq-item"><button><span>A mentoria também atende empresas?</span><i data-lucide="plus"></i></button><div><p>Sim. Palestras, workshops e programas podem ser adaptados ao perfil da equipe e aos desafios da organização.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 py-16 lg:px-8 lg:py-24"><div class="cta-panel mx-auto max-w-7xl overflow-hidden rounded-[2rem] px-6 py-16 text-center text-white sm:px-12 lg:py-20 reveal"><span class="mx-auto grid h-14 w-14 place-items-center rounded-full bg-gold text-ink"><i data-lucide="compass"></i></span><h2 class="mx-auto mt-7 max-w-3xl font-display text-4xl font-extrabold tracking-tight sm:text-5xl">Seu futuro financeiro pode começar com uma conversa.</h2><p class="mx-auto mt-5 max-w-xl text-white/60">Sem compromisso, sem julgamento e sem promessas irreais. Apenas clareza para o seu próximo passo.</p><button data-open-modal class="cta-primary mt-9">Quero começar minha transformação <i data-lucide="arrow-up-right" class="h-5 w-5"></i></button></div></section>
+  </main>
+
+  <footer class="bg-ink px-5 pb-8 pt-16 text-white lg:px-8"><div class="mx-auto max-w-7xl"><div class="flex flex-col justify-between gap-10 border-b border-white/10 pb-12 md:flex-row"><div><div class="flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-full border border-white/20 text-gold font-display font-extrabold">CC</span><strong class="font-display tracking-wide">CRISTIANE CIRRILO</strong></div><p class="mt-5 max-w-sm text-sm leading-6 text-white/45">Educação financeira para transformar escolhas, relações e futuros.</p></div><div class="grid grid-cols-2 gap-12 text-sm"><div class="space-y-3"><strong class="block text-white">Navegue</strong><a class="block text-white/50" href="#metodo">O método</a><a class="block text-white/50" href="#sobre">Sobre</a><a class="block text-white/50" href="#faq">Dúvidas</a></div><div class="space-y-3"><strong class="block text-white">Contato</strong><a class="block text-white/50" href="mailto:contato@cristianecirrilo.com.br">E-mail</a><a class="block text-white/50" href="#">Instagram</a><a class="block text-white/50" href="#">WhatsApp</a></div></div></div><div class="flex flex-col gap-2 pt-7 text-xs text-white/30 sm:flex-row sm:justify-between"><span>© <span id="year"></span> Cristiane Cirrilo. Todos os direitos reservados.</span><span>Educação financeira com propósito.</span></div></div></footer>
+
+  <div id="leadModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-modal></div><div class="modal-card"><button class="modal-close" data-close-modal aria-label="Fechar"><i data-lucide="x"></i></button><div class="mb-7"><span class="section-kicker">Primeiro passo</span><h2 id="modalTitle" class="mt-3 font-display text-3xl font-extrabold">Conte um pouco sobre você.</h2><p class="mt-2 text-sm leading-6 text-ink/55">Preencha os dados e a equipe entrará em contato para uma conversa inicial.</p></div><form id="leadForm" class="space-y-4"><label class="form-field"><span>Seu nome</span><input required name="name" placeholder="Como podemos chamar você?"></label><label class="form-field"><span>WhatsApp</span><input required name="phone" type="tel" placeholder="(00) 00000-0000"></label><label class="form-field"><span>Qual é seu principal objetivo?</span><select required name="goal"><option value="">Selecione uma opção</option><option>Sair das dívidas</option><option>Organizar minha vida financeira</option><option>Começar a investir</option><option>Programa para minha equipe</option></select></label><button class="cta-dark w-full justify-center" type="submit">Solicitar conversa <i data-lucide="arrow-right" class="h-5 w-5"></i></button><p class="text-center text-[11px] text-ink/40">Seus dados serão usados apenas para este contato.</p></form><div id="formSuccess" class="hidden py-10 text-center"><span class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-mint/15 text-sea"><i data-lucide="check" class="h-8 w-8"></i></span><h3 class="mt-5 font-display text-2xl font-bold">Mensagem recebida!</h3><p class="mt-2 text-ink/55">Em breve entraremos em contato com você.</p></div></div>
+  </div>
+  <a href="#" data-open-modal class="whatsapp-float" aria-label="Falar com a Cristiane"><i data-lucide="message-circle"></i><span>Vamos conversar?</span></a>
+  <script src="script.js"></script>
+</body>
+</html>
