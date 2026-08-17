@@ -1,16 +1,19 @@
 {
-  "name": "cristiane-cirrilo-financas",
-  "version": "1.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "vinext dev",
-    "build": "vinext build",
-    "start": "vinext start"
-  },
-  "dependencies": {
-    "react": "19.2.6",
-    "react-dom": "19.2.6",
-    "vinext": "latest"
-  }
+    "name":  "cristiane-cirrilo-financas",
+    "version":  "1.0.0",
+    "private":  true,
+    "type":  "module",
+    "scripts":  {
+                    "dev":  "vinext dev",
+                    "build":  "vinext build",
+                    "start":  "vinext start"
+                },
+    "dependencies":  {
+                         "react":  "19.2.6",
+                         "react-dom":  "19.2.6",
+                         "vinext":  "latest"
+                     },
+    "devDependencies":  {
+                            "@vitejs/plugin-rsc":  "0.5.34"
+                        }
 }
