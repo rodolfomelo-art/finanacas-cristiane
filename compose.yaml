@@ -1,0 +1,9 @@
+services:
+  site:
+    build:
+      context: .
+    image: financas-cristiane:latest
+    container_name: financas-cristiane
+    ports:
+      - "8000:80"
+    restart: unless-stopped
