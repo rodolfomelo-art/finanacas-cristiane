@@ -8,15 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-  <script>
-    tailwind.config = { theme: { extend: {
-      colors: { ink:'#071e24', deep:'#0b2c33', sea:'#0f766e', mint:'#2dd4a7', gold:'#e9b44c', cream:'#f6f3eb' },
-      fontFamily: { sans:['DM Sans','sans-serif'], display:['Manrope','sans-serif'] }
-    }}}
-  </script>
-  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="theme-color" content="#071e24">
+  <link rel="canonical" href="https://cristianecirrilo.com.br/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Cristiane Cirillo | Mentoria Financeira">
+  <meta property="og:description" content="Saia das dívidas, organize sua vida financeira e comece a investir com segurança.">
+  <meta property="og:image" content="https://cristianecirrilo.com.br/assets/og-image.jpg">
+  <meta property="og:url" content="https://cristianecirrilo.com.br/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/css/tailwind.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="bg-cream text-ink antialiased selection:bg-mint selection:text-ink">
   <div class="noise" aria-hidden="true"></div>
@@ -30,7 +33,7 @@
         <a class="nav-link" href="#metodo">O método</a><a class="nav-link" href="#jornada">Sua jornada</a><a class="nav-link" href="#sobre">Sobre</a><a class="nav-link" href="#faq">Dúvidas</a>
       </div>
       <button data-open-modal class="hidden rounded-full bg-gold px-5 py-3 text-sm font-bold text-ink transition hover:-translate-y-0.5 hover:bg-[#f3c667] md:block">Quero organizar minhas finanças</button>
-      <button id="menuButton" class="text-white md:hidden" aria-label="Abrir menu"><i data-lucide="menu"></i></button>
+      <button id="menuButton" class="text-white md:hidden" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu"><i data-lucide="menu"></i></button>
     </nav>
     <div id="mobileMenu" class="hidden border-t border-white/10 bg-ink/95 px-5 py-5 text-white md:hidden">
       <div class="flex flex-col gap-4"><a href="#metodo">O método</a><a href="#jornada">Sua jornada</a><a href="#sobre">Sobre</a><a href="#faq">Dúvidas</a><button data-open-modal class="mt-2 rounded-full bg-gold px-5 py-3 font-bold text-ink">Agendar conversa</button></div>
@@ -58,7 +61,7 @@
 
         <div class="relative z-10 mx-auto w-full max-w-[510px] reveal delay-1" aria-label="Painel ilustrativo de evolução financeira">
           <div class="dashboard-card">
-            <div class="mb-8 flex items-start justify-between"><div><p class="text-xs uppercase tracking-[.22em] text-white/40">Seu novo cenário</p><p class="mt-2 font-display text-2xl font-bold">Liberdade em construção</p></div><span class="status"><span></span> No caminho</span></div>
+            <div class="mb-8 flex items-start justify-between"><div><p class="text-xs uppercase tracking-[.22em] text-white/60">Seu novo cenário</p><p class="mt-2 font-display text-2xl font-bold">Liberdade em construção</p></div><span class="status"><span></span> No caminho</span></div>
             <div class="relative h-56 overflow-hidden rounded-2xl bg-white/[.035] p-5">
               <div class="chart-grid"></div>
               <svg viewBox="0 0 460 190" class="absolute inset-x-0 bottom-0 w-full" role="img" aria-label="Gráfico crescente da organização ao investimento">
@@ -80,7 +83,7 @@
         </div>
       </div>
       <div class="absolute bottom-0 inset-x-0 border-t border-white/10 bg-white/[.025] backdrop-blur-sm">
-        <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-12 gap-y-4 px-5 py-5 text-xs uppercase tracking-[.18em] text-white/40 lg:justify-between lg:px-8"><span>Clareza para decidir</span><i data-lucide="diamond" class="h-3 w-3 text-gold"></i><span>Coragem para mudar</span><i data-lucide="diamond" class="h-3 w-3 text-gold"></i><span>Estratégia para prosperar</span><i data-lucide="diamond" class="h-3 w-3 text-gold"></i><span>Leveza para viver</span></div>
+        <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-12 gap-y-4 px-5 py-5 text-xs uppercase tracking-[.18em] text-white/60 lg:justify-between lg:px-8"><span>Clareza para decidir</span><i data-lucide="diamond" class="h-3 w-3 text-gold"></i><span>Coragem para mudar</span><i data-lucide="diamond" class="h-3 w-3 text-gold"></i><span>Estratégia para prosperar</span><i data-lucide="diamond" class="h-3 w-3 text-gold"></i><span>Leveza para viver</span></div>
       </div>
     </section>
 
@@ -134,7 +137,7 @@
       <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:px-8">
         <div class="relative mx-auto w-full max-w-lg reveal">
           <figure class="portrait-photo">
-            <img src="../assets/cristiane-cirrilo.png" alt="Retrato profissional de Cristiane Cirillo" width="1024" height="1280" loading="lazy">
+            <img src="/assets/cristiane-cirrilo.webp" alt="Retrato profissional de Cristiane Cirillo" width="1024" height="1280" loading="lazy">
             <div class="portrait-shade" aria-hidden="true"></div>
             <figcaption><span>Mentora financeira</span><strong>Cristiane Cirillo</strong></figcaption>
           </figure>
@@ -156,10 +159,10 @@
     <section id="faq" class="bg-white py-24 lg:py-32">
       <div class="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[.8fr_1.2fr] lg:px-8"><div class="reveal"><p class="section-kicker">Perguntas frequentes</p><h2 class="section-title mt-5">Dúvidas também fazem parte do começo.</h2><p class="mt-6 text-ink/60">Se a sua pergunta não estiver aqui, fale diretamente com a gente.</p><button data-open-modal class="mt-8 inline-flex items-center gap-2 font-bold text-sea">Enviar uma pergunta <i data-lucide="arrow-up-right" class="h-4 w-4"></i></button></div>
         <div class="divide-y divide-ink/10" id="accordion">
-          <article class="faq-item open"><button><span>Preciso estar com as contas em dia para começar?</span><i data-lucide="plus"></i></button><div><p>Não. A mentoria foi pensada justamente para quem precisa organizar o cenário atual. O ponto de partida é a sua realidade de hoje.</p></div></article>
-          <article class="faq-item"><button><span>Você vai me indicar investimentos?</span><i data-lucide="plus"></i></button><div><p>O foco inicial é construir uma base financeira saudável. Quando for o momento, você receberá educação e critérios para começar a investir com consciência e segurança.</p></div></article>
-          <article class="faq-item"><button><span>Como funciona o primeiro encontro?</span><i data-lucide="plus"></i></button><div><p>É uma conversa confidencial para entender seu momento, suas principais dificuldades e seus objetivos. Depois disso, definimos a melhor rota de acompanhamento.</p></div></article>
-          <article class="faq-item"><button><span>A mentoria também atende empresas?</span><i data-lucide="plus"></i></button><div><p>Sim. Palestras, workshops e programas podem ser adaptados ao perfil da equipe e aos desafios da organização.</p></div></article>
+          <article class="faq-item open"><button aria-expanded="true"><span>Preciso estar com as contas em dia para começar?</span><i data-lucide="plus"></i></button><div><p>Não. A mentoria foi pensada justamente para quem precisa organizar o cenário atual. O ponto de partida é a sua realidade de hoje.</p></div></article>
+          <article class="faq-item"><button aria-expanded="false"><span>Você vai me indicar investimentos?</span><i data-lucide="plus"></i></button><div><p>O foco inicial é construir uma base financeira saudável. Quando for o momento, você receberá educação e critérios para começar a investir com consciência e segurança.</p></div></article>
+          <article class="faq-item"><button aria-expanded="false"><span>Como funciona o primeiro encontro?</span><i data-lucide="plus"></i></button><div><p>É uma conversa confidencial para entender seu momento, suas principais dificuldades e seus objetivos. Depois disso, definimos a melhor rota de acompanhamento.</p></div></article>
+          <article class="faq-item"><button aria-expanded="false"><span>A mentoria também atende empresas?</span><i data-lucide="plus"></i></button><div><p>Sim. Palestras, workshops e programas podem ser adaptados ao perfil da equipe e aos desafios da organização.</p></div></article>
         </div>
       </div>
     </section>
@@ -167,12 +170,13 @@
     <section class="px-5 py-16 lg:px-8 lg:py-24"><div class="cta-panel mx-auto max-w-7xl overflow-hidden rounded-[2rem] px-6 py-16 text-center text-white sm:px-12 lg:py-20 reveal"><span class="mx-auto grid h-14 w-14 place-items-center rounded-full bg-gold text-ink"><i data-lucide="compass"></i></span><h2 class="mx-auto mt-7 max-w-3xl font-display text-4xl font-extrabold tracking-tight sm:text-5xl">Seu futuro financeiro pode começar com uma conversa.</h2><p class="mx-auto mt-5 max-w-xl text-white/60">Sem compromisso, sem julgamento e sem promessas irreais. Apenas clareza para o seu próximo passo.</p><button data-open-modal class="cta-primary mt-9">Quero começar minha transformação <i data-lucide="arrow-up-right" class="h-5 w-5"></i></button></div></section>
   </main>
 
-  <footer class="bg-ink px-5 pb-8 pt-16 text-white lg:px-8"><div class="mx-auto max-w-7xl"><div class="flex flex-col justify-between gap-10 border-b border-white/10 pb-12 md:flex-row"><div><div class="flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-full border border-white/20 text-gold font-display font-extrabold">CC</span><strong class="font-display tracking-wide">Cristiane Cirillo</strong></div><p class="mt-5 max-w-sm text-sm leading-6 text-white/45">Educação financeira para transformar escolhas, relações e futuros.</p></div><div class="grid grid-cols-2 gap-12 text-sm"><div class="space-y-3"><strong class="block text-white">Navegue</strong><a class="block text-white/50" href="#metodo">O método</a><a class="block text-white/50" href="#sobre">Sobre</a><a class="block text-white/50" href="#faq">Dúvidas</a></div><div class="space-y-3"><strong class="block text-white">Contato</strong><a class="block text-white/50" href="mailto:contato@cristianecirrilo.com.br">E-mail</a><a class="block text-white/50" href="#">Instagram</a><a class="block text-white/50" href="#">WhatsApp</a></div></div></div><div class="flex flex-col gap-2 pt-7 text-xs text-white/30 sm:flex-row sm:justify-between"><span>© <span id="year"></span> Cristiane Cirillo. Todos os direitos reservados.</span><span>Educação financeira com propósito.</span></div></div></footer>
+  <footer class="bg-ink px-5 pb-8 pt-16 text-white lg:px-8"><div class="mx-auto max-w-7xl"><div class="flex flex-col justify-between gap-10 border-b border-white/10 pb-12 md:flex-row"><div><div class="flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-full border border-white/20 text-gold font-display font-extrabold">CC</span><strong class="font-display tracking-wide">Cristiane Cirillo</strong></div><p class="mt-5 max-w-sm text-sm leading-6 text-white/45">Educação financeira para transformar escolhas, relações e futuros.</p></div><div class="grid grid-cols-2 gap-12 text-sm"><div class="space-y-3"><strong class="block text-white">Navegue</strong><a class="block text-white/50" href="#metodo">O método</a><a class="block text-white/50" href="#sobre">Sobre</a><a class="block text-white/50" href="#faq">Dúvidas</a></div><div class="space-y-3"><strong class="block text-white">Contato</strong><a class="block text-white/50" href="mailto:contato@cristianecirrilo.com.br">E-mail</a><a class="block text-white/50" href="https://wa.me/5511952499352" target="_blank" rel="noopener">WhatsApp</a></div></div></div><div class="flex flex-col gap-2 pt-7 text-xs text-white/55 sm:flex-row sm:justify-between"><span>© <span id="year"></span> Cristiane Cirillo. Todos os direitos reservados.</span><span>Educação financeira com propósito.</span></div></div></footer>
 
   <div id="leadModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-backdrop" data-close-modal></div><div class="modal-card"><button class="modal-close" data-close-modal aria-label="Fechar"><i data-lucide="x"></i></button><div class="mb-7"><span class="section-kicker">Primeiro passo</span><h2 id="modalTitle" class="mt-3 font-display text-3xl font-extrabold">Conte um pouco sobre você.</h2><p class="mt-2 text-sm leading-6 text-ink/55">Preencha os dados e a equipe entrará em contato para uma conversa inicial.</p></div><form id="leadForm" class="space-y-4"><label class="form-field"><span>Seu nome</span><input required name="name" placeholder="Como podemos chamar você?"></label><label class="form-field"><span>WhatsApp</span><input required name="phone" type="tel" placeholder="(00) 00000-0000"></label><label class="form-field"><span>Qual é seu principal objetivo?</span><select required name="goal"><option value="">Selecione uma opção</option><option>Sair das dívidas</option><option>Organizar minha vida financeira</option><option>Começar a investir</option><option>Programa para minha equipe</option></select></label><button class="cta-dark w-full justify-center" type="submit">Solicitar conversa <i data-lucide="arrow-right" class="h-5 w-5"></i></button><p class="text-center text-[11px] text-ink/40">Seus dados serão usados apenas para este contato.</p></form><div id="formSuccess" class="hidden py-10 text-center"><span class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-mint/15 text-sea"><i data-lucide="check" class="h-8 w-8"></i></span><h3 class="mt-5 font-display text-2xl font-bold">Mensagem recebida!</h3><p class="mt-2 text-ink/55">Em breve entraremos em contato com você.</p></div></div>
+    <div class="modal-backdrop" data-close-modal></div><div class="modal-card"><button class="modal-close" data-close-modal aria-label="Fechar"><i data-lucide="x"></i></button><div class="mb-7"><span class="section-kicker">Primeiro passo</span><h2 id="modalTitle" class="mt-3 font-display text-3xl font-extrabold">Conte um pouco sobre você.</h2><p class="mt-2 text-sm leading-6 text-ink/55">Preencha os dados e a equipe entrará em contato para uma conversa inicial.</p></div><form id="leadForm" class="space-y-4"><label class="form-field"><span>Seu nome</span><input required name="name" placeholder="Como podemos chamar você?"></label><label class="form-field"><span>WhatsApp</span><input required name="phone" type="tel" inputmode="tel" autocomplete="tel" pattern="[0-9()\s+\-]{10,20}" placeholder="(00) 00000-0000"></label><label class="form-field"><span>Qual é seu principal objetivo?</span><select required name="goal"><option value="">Selecione uma opção</option><option>Sair das dívidas</option><option>Organizar minha vida financeira</option><option>Começar a investir</option><option>Programa para minha equipe</option></select></label><button class="cta-dark w-full justify-center" type="submit">Continuar no WhatsApp <i data-lucide="arrow-right" class="h-5 w-5"></i></button><p class="text-center text-[11px] text-ink/40">Ao continuar, você abrirá o WhatsApp com estes dados para falar com a Cristiane. Eles não são armazenados neste site.</p></form><div id="formSuccess" class="hidden py-10 text-center"><span class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-mint/15 text-sea"><i data-lucide="check" class="h-8 w-8"></i></span><h3 class="mt-5 font-display text-2xl font-bold">Quase lá!</h3><p class="mt-2 text-ink/55">O WhatsApp foi aberto em outra aba. Se não abriu, <a class="font-bold text-sea underline" href="https://wa.me/5511952499352" target="_blank" rel="noopener">clique aqui</a>.</p></div></div>
   </div>
-  <a href="#" data-open-modal class="whatsapp-float" aria-label="Falar com a Cristiane"><i data-lucide="message-circle"></i><span>Vamos conversar?</span></a>
-  <script src="../script/script.js"></script>
+  <a href="https://wa.me/5511952499352?text=Ol%C3%A1%2C%20Cristiane!%20Vim%20pelo%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Falar com a Cristiane"><i data-lucide="message-circle"></i><span>Vamos conversar?</span></a>
+  <script src="/script/lucide.min.js"></script>
+  <script src="/script/script.js"></script>
 </body>
 </html>
