@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
     const data = new FormData(form);
     const text = `Olá, Cristiane! Me chamo ${data.get('name').trim()}. Meu objetivo é: ${data.get('goal')}. Meu WhatsApp: ${data.get('phone').trim()}.`;
-    window.open('https://wa.me/5511952499352?text=' + encodeURIComponent(text), '_blank', 'noopener');
+    window.open('https://wa.me/5511982499352?text=' + encodeURIComponent(text), '_blank', 'noopener');
     form.classList.add('hidden'); success.classList.remove('hidden'); lucide.createIcons();
   });
   document.getElementById('year').textContent = new Date().getFullYear();
