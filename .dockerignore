@@ -1,5 +1,7 @@
 .git
 .gitignore
 .dockerignore
+.htaccess
 compose.yaml
 README.md
+node_modules/

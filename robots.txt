@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://cristianecirrilo.com.br/sitemap.xml
+Sitemap: https://red-owl-581900.hostingersite.com/sitemap.xml
