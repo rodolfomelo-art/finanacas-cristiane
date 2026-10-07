@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://red-owl-581900.hostingersite.com/sitemap.xml
+Sitemap: https://cristianefinancas.com.br/sitemap.xml
